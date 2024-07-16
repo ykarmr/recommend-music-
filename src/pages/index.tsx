@@ -15,7 +15,7 @@ const Home = () => {
     try {
       setIsLoading(true);
       const res = await fetch(
-        `http://localhost:3000/api/recommend?text=${text}`
+        `${process.env.BASE_PARH}/api/recommend?text=${text}`
       );
       const json = await res.json();
       setRecommend(json);
