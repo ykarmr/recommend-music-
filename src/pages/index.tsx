@@ -14,7 +14,7 @@ const Home = () => {
     if (!text || isLoading) return;
     try {
       setIsLoading(true);
-      const res = await fetch(`/api/recommend?text=${text}`);
+      const res = await fetch(`/api/recommend?prompt=${text}`);
       const json = await res.json();
       setRecommend(json);
     } catch (e) {
