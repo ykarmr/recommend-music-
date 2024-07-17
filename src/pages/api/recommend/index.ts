@@ -34,7 +34,7 @@ const generateSpotifyParamFromGemini = async (
     throw Error("geminiApiKeyを設定してください");
   }
   const model = new GenerativeModel(geminiApiKey, {
-    model: "gemini-1.5-pro",
+    model: "gemini-1.5-flash",
     generationConfig: {
       responseMimeType: "application/json",
     },
