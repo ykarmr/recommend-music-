@@ -57,7 +57,6 @@ const generateSpotifyParamFromGemini = async (
   const params = {
     limit: "20",
     market: "JP",
-    seed_genres: ["j-pop"].join(","),
     ...generate,
   };
 
